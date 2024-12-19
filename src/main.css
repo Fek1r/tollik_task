@@ -66,6 +66,37 @@ body {
   animation: fadeInText 1.2s ease-in-out; /* Анимация текста */
 }
 
+.language-switcher {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.language-switcher button {
+  background: rgba(255, 255, 255, 0.2); /* Такой же цвет фона, как у кнопки Register */
+  border: none;
+  color: white;
+  padding: 8px 20px; /* Подобный размер, как у кнопки Register */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 99px; /* Скругленные углы */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s; /* Эффекты при наведении */
+}
+
+/* Эффект при наведении на кнопки */
+.language-switcher button:hover {
+  background: rgba(255, 255, 255, 0.3); /* Становится светлее при наведении */
+  transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+/* Эффект при нажатии на кнопки */
+.language-switcher button:active {
+  background: rgba(255, 255, 255, 0.4); /* Светлее при нажатии */
+  transform: scale(0.95); /* Сжатие при нажатии */
+}
+
 /* Анимация текста */
 @keyframes fadeInText {
   0% {
@@ -144,7 +175,7 @@ body {
 /* Кнопка входа */
 .register-button {
   margin-top: 16px;
-  padding: 10px 24px;
+  padding: 11px 26px;
   background: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 99px;
@@ -157,7 +188,7 @@ body {
 /* Эффект наведения и нажатия для кнопки */
 .register-button:hover {
   background: rgba(255, 255, 255, 0.3);
-  transform: scale(1.25);
+  transform: scale(1.05);
 }
 
 .register-button:active {
